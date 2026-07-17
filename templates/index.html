@@ -8,7 +8,6 @@
 <body>
     <div class="container">
         <h1>📝 Task Manager</h1>
-        <p class="subtitle">Flask REST API + SQLite + JS Fetch Demo</p>
 
         <div class="add-task-box">
             <input type="text" id="taskInput" placeholder="Enter a new task...">
@@ -19,10 +18,9 @@
     </div>
 
     <script>
-        // Page load hote hi tasks fetch karo
+        
         document.addEventListener("DOMContentLoaded", loadTasks);
 
-        // GET request -> saare tasks laana
         async function loadTasks() {
             const res = await fetch("/api/tasks");
             const tasks = await res.json();
@@ -43,8 +41,6 @@
                 list.appendChild(li);
             });
         }
-
-        // POST request -> naya task add karna
         async function addTask() {
             const input = document.getElementById("taskInput");
             const title = input.value.trim();
@@ -60,7 +56,6 @@
             loadTasks();
         }
 
-        // PUT request -> task ka status toggle karna
         async function toggleStatus(id, currentStatus) {
             const newStatus = currentStatus === "completed" ? "pending" : "completed";
 
@@ -73,7 +68,6 @@
             loadTasks();
         }
 
-        // DELETE request -> task delete karna
         async function deleteTask(id) {
             await fetch(`/api/tasks/${id}`, { method: "DELETE" });
             loadTasks();
