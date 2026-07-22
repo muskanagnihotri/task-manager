@@ -13,9 +13,7 @@ A full-stack Task Management web application built with **Flask**, **SQLite**, a
 - Persistent storage using SQLite
 - Clean, responsive UI
 
----
-
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -24,48 +22,19 @@ A full-stack Task Management web application built with **Flask**, **SQLite**, a
 | Frontend | HTML5, CSS3, JavaScript (Fetch API) |
 | Templating | Jinja2 |
 
----
 
-## 📂 Project Structure
-
-```
-task_manager/
-├── app.py                 # Flask backend + REST API routes
-├── templates/
-│   └── index.html         # Frontend UI
-├── static/
-│   └── style.css          # Styling
-└── tasks.db                # SQLite database (auto-created on first run)
-```
-
----
-
-## ⚙️ Installation & Setup
+##  Installation & Setup
 
 1. **Clone the repository**
-   ```bash
-   git clone <your-repo-link>
-   cd task_manager
-   ```
 
 2. **Install dependencies**
-   ```bash
-   pip install flask
-   ```
-
+   
 3. **Run the application**
-   ```bash
-   python app.py
-   ```
 
 4. **Open in browser**
-   ```
-   http://localhost:5000
-   ```
 
 The SQLite database (`tasks.db`) and the `tasks` table are created automatically the first time the app runs.
 
----
 
 ## 📡 API Endpoints
 
