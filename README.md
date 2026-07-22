@@ -36,7 +36,7 @@ A full-stack Task Management web application built with **Flask**, **SQLite**, a
 The SQLite database (`tasks.db`) and the `tasks` table are created automatically the first time the app runs.
 
 
-## 📡 API Endpoints
+##  API Endpoints
 
 | Method | Endpoint | Description |
 |---|---|---|
@@ -45,32 +45,11 @@ The SQLite database (`tasks.db`) and the `tasks` table are created automatically
 | `PUT` | `/api/tasks/<id>` | Update a task's status |
 | `DELETE` | `/api/tasks/<id>` | Delete a task |
 
-**Example — Create a task**
-```bash
-curl -X POST http://localhost:5000/api/tasks \
-  -H "Content-Type: application/json" \
-  -d '{"title": "Finish project report"}'
-```
 
-**Example — Update task status**
-```bash
-curl -X PUT http://localhost:5000/api/tasks/1 \
-  -H "Content-Type: application/json" \
-  -d '{"status": "completed"}'
-```
-
----
-
-## 🧩 Future Improvements
+##  Future Improvements
 
 - User authentication (so each user manages their own tasks)
 - Migrate from SQLite to PostgreSQL/MySQL for production use
 - Add due dates and priority levels for tasks
 - Deploy with a production WSGI server (Gunicorn)
 
----
-
-## 👩‍💻 Author
-
-**Muskan Agnihotri**
-[GitHub](https://github.com/) · [LinkedIn](https://linkedin.com/)
