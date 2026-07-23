@@ -24,10 +24,8 @@ A full-stack Task Management web application built with **Flask**, **SQLite**, a
 ##  Installation & Setup
 
 1. **Clone the repository**
-2. **Install dependencies**
-   
+2. **Install dependencies** 
 3. **Run the application**
-
 4. **Open in browser**
 
 The SQLite database (`tasks.db`) and the `tasks` table are created automatically the first time the app runs.
