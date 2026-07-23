@@ -30,7 +30,6 @@ A full-stack Task Management web application built with **Flask**, **SQLite**, a
 
 The SQLite database (`tasks.db`) and the `tasks` table are created automatically the first time the app runs.
 
-
 ##  API Endpoints
 
 | Method | Endpoint | Description |
@@ -38,7 +37,6 @@ The SQLite database (`tasks.db`) and the `tasks` table are created automatically
 | `POST` | `/api/tasks` | Create a new task |
 | `PUT` | `/api/tasks/<id>` | Update a task's status |s
 | `DELETE` | `/api/tasks/<id>` | Delete a task |
-
 
 ##  Future Improvements
 
