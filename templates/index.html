@@ -17,8 +17,7 @@
         <ul id="taskList" class="task-list"></ul>
     </div>
 
-    <script>
-        
+    <script>      
         document.addEventListener("DOMContentLoaded", loadTasks);
 
         async function loadTasks() {
@@ -55,7 +54,6 @@
             input.value = "";
             loadTasks();
         }
-
         async function toggleStatus(id, currentStatus) {
             const newStatus = currentStatus === "completed" ? "pending" : "completed";
 
