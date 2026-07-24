@@ -46,7 +46,6 @@ h1 {
 #taskInput:focus {
     border-color: #764ba2;
 }
-
 .add-task-box button {
     background: #764ba2;
     color: #fff;
@@ -57,11 +56,9 @@ h1 {
     font-size: 14px;
     transition: background 0.2s;
 }
-
 .add-task-box button:hover {
     background: #5f3a85;
 }
-
 .task-list {
     list-style: none;
 }
