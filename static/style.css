@@ -62,7 +62,6 @@ h1 {
 .task-list {
     list-style: none;
 }
-
 .task-list li {
     display: flex;
     justify-content: space-between;
@@ -74,16 +73,13 @@ h1 {
     cursor: pointer;
     transition: 0.2s;
 }
-
 .task-list li:hover {
     background: #eee7fa;
 }
-
 .task-list li.completed span {
     text-decoration: line-through;
     color: #aaa;
 }
-
 .delete-btn {
     background: #ff5c5c;
     color: #fff;
