@@ -24,7 +24,6 @@
             tasks.forEach(task => {
                 const li = document.createElement("li");
                 li.className = task.status === "completed" ? "completed" : "";
-
                 li.innerHTML = `
                     <span onclick="toggleStatus(${task.id}, '${task.status}')">
                         ${task.title}
