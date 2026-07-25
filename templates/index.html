@@ -18,11 +18,9 @@
     </div>
     <script>      
         document.addEventListener("DOMContentLoaded", loadTasks);
-
         async function loadTasks() {
             const res = await fetch("/api/tasks");
             const tasks = await res.json();
-
             const list = document.getElementById("taskList");
             list.innerHTML = "";
 
