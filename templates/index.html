@@ -8,7 +8,6 @@
 <body>
     <div class="container">
         <h1>📝 Task Manager</h1>
-
         <div class="add-task-box">
             <input type="text" id="taskInput" placeholder="Enter a new task...">
             <button onclick="addTask()">Add Task</button>
@@ -50,7 +49,6 @@
         }
         async function toggleStatus(id, currentStatus) {
             const newStatus = currentStatus === "completed" ? "pending" : "completed";
-
             await fetch(`/api/tasks/${id}`, {
                 method: "PUT",
                 headers: { "Content-Type": "application/json" },
@@ -58,7 +56,6 @@
             });
             loadTasks();
         }
-
         async function deleteTask(id) {
             await fetch(`/api/tasks/${id}`, { method: "DELETE" });
             loadTasks();
