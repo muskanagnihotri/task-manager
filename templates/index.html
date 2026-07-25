@@ -23,7 +23,6 @@
             const tasks = await res.json();
             const list = document.getElementById("taskList");
             list.innerHTML = "";
-
             tasks.forEach(task => {
                 const li = document.createElement("li");
                 li.className = task.status === "completed" ? "completed" : "";
@@ -46,7 +45,6 @@
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ title: title })
             });
-
             input.value = "";
             loadTasks();
         }
@@ -58,7 +56,6 @@
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ status: newStatus })
             });
-
             loadTasks();
         }
 
