@@ -5,6 +5,7 @@
     <title>Task Manager</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+
 <body>
     <div class="container">
         <h1>📝 Task Manager</h1>
@@ -62,7 +63,7 @@
             await fetch(`/api/tasks/${id}`, { method: "DELETE" });
             loadTasks();
         }
-        
+
     </script>
 </body>
 </html>
