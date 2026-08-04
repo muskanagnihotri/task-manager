@@ -54,7 +54,6 @@
             });
             loadTasks();
         }
-
         async function deleteTask(id) {
             await fetch(`/api/tasks/${id}`, { method: "DELETE" });
             loadTasks();
