@@ -33,7 +33,6 @@
                 list.appendChild(li);
             });
         }
-
         async function addTask() {
             const input = document.getElementById("taskInput");
             const title = input.value.trim();
@@ -46,7 +45,6 @@
             input.value = "";
             loadTasks();
         }
-
         async function toggleStatus(id, currentStatus) {
             const newStatus = currentStatus === "completed" ? "pending" : "completed";
             await fetch(`/api/tasks/${id}`, {
