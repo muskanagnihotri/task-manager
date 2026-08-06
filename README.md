@@ -12,7 +12,6 @@ A full-stack Task Management web application built with **Flask**, **SQLite**, a
 - Clean, responsive UI
 
 ##  Tech Stack
-
 | Layer | Technology |
 |---|---|
 | Backend | Python, Flask |
