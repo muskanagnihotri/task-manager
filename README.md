@@ -20,7 +20,6 @@ A full-stack Task Management web application built with **Flask**, **SQLite**, a
 | Templating | Jinja2 |
 
 ##  Installation & Setup
-
 1. **Clone the repository**
 2. **Install dependencies** 
 3. **Run the application**
