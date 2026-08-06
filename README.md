@@ -35,7 +35,6 @@ The SQLite database (`tasks.db`) and the `tasks` table are created automatically
 | `DELETE` | `/api/tasks/<id>` | Delete a task |
 
 ##  Future Improvements
-
 - User authentication (so each user manages their own tasks)
 - Migrate from SQLite to PostgreSQL/MySQL for production use
 - Add due dates and priority levels for tasks
