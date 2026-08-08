@@ -3,7 +3,6 @@
 A full-stack Task Management web application built with **Flask**, **SQLite**, and vanilla **JavaScript**. It provides a complete RESTful API for managing tasks (Create, Read, Update, Delete) with a clean, responsive frontend that updates in real time without page reloads.
 
 ##  Features
-
 - Add new tasks
 - Mark tasks as completed / pending
 - Delete tasks
